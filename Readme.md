@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Анастасия Шипкова](https://up.htmlacademy.ru/javascript-individual/2/user/2702482).
-* Наставник: `Неизвестно`.
+* Наставник: [Victoria](https://up.htmlacademy.ru/javascript-individual/2/user/2702482)
 
 ---
 

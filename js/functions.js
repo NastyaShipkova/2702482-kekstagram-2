@@ -1,36 +1,37 @@
 
 // Задача 1
-const checkString = (text,maxLength) => text.length <= maxLength;
+const checkString = (text, maxLength) => text.length <= maxLength;
 
-console.log(checkString('abc',2))
-console.log(checkString('abcd',2))
-console.log(checkString('abc',3))
-console.log(checkString('abc121212',2))
+checkString('abc', 2);
+// console.log(checkString('abcd', 2))
+// console.log(checkString('abc', 3))
+// console.log(checkString('abc121212', 2))
 
-const CheckPalindrom= (text) => {
-  const normaliset = text.replaceAll(' ','').toLowerCase();
-}
+const checkPalindrom = (text) => {
+  const normalised = text.replaceAll(' ', '').toLowerCase();
+  let reversed = '';
+  for (let i = normalised.length - 1; i >= 0; i--) {
+    reversed = reversed + normalised[i]
+  }
+  return normalised === reversed;
+};
 
-
-// Задача 2
-for (let i=S length-1;i=>0;i--) {
-let SS=" ";
-SS=SS+S[i];
-}
-console.log(S===SS)
-
+checkPalindrom('шалаШ1');
 
 // Задача 3
-const extractNumbers= (string) => {
-let result=' ';
+const extractNumbers = (text) => {
+  let result = '';
 
-string = string.toString ();
+  const normalString = text.toString();
 
-for (let i=0;  i <=string.length-1; i=+=) {
-if (Number.isNaN(parseInt(string[i],10)) === false) {
-result +=string[i];
+  for (let i = 0; i <= normalString.length - 1; i++) {
+    if (Number.isNaN(parseInt(normalString[i], 10)) === false) {
+      result += normalString[i];
+    }
   }
-}
-return result === " " ? NaN : Number(result);
+  return parseInt(result, 10);
 };
-console.log(extractNumbers("2023 год"))
+
+extractNumbers('компот из 2023 года 2 месяцa');
+// console.log(extractNumbers(123321))
+
